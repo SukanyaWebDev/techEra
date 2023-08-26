@@ -45,7 +45,7 @@ class Home extends Component {
       this.setState({myArray: updatedArray})
       this.setState({isLoading: false})
     }
-    if (Data.status === 404) {
+    if (Data.ok === false) {
       this.setState({isLoading: false})
       this.setState({isSuccess: false})
       console.log('hi')

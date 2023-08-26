@@ -31,7 +31,7 @@ class SingleCard extends Component {
       this.setState({blogData: updatedData, isLoading: false, isSuccess: true})
     }
 
-    if (response.status === 404) {
+    if (response.ok === false) {
       this.setState({isLoading: false, isSuccess: false})
     }
   }
